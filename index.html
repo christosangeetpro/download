@@ -1,4 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ক্যাশ বন্ধ করার জন্য মেটা ট্যাগ -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to latest version... Please wait.</p>
 
   <script>
-    window.location.href = "https://christosangeet.com/downloads/christosangeet_v1.1.3.apk";
+    // টাইমস্ট্যাম্প যোগ করে ক্যাশ বাইপাস
+    const timestamp = new Date().getTime();
+    const apkUrl = "https://christosangeet.com/downloads/christosangeet_v1.1.3.apk?t=" + timestamp;
+
+    // অটো রিডাইরেক্ট
+    window.location.href = apkUrl;
   </script>
+</body>
+</html>
