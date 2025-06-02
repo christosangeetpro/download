@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- ব্রাউজারকে ক্যাশ না রাখতে বাধ্য করা -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-
   <title>ডাউনলোড হচ্ছে...</title>
 </head>
 <body>
   <h2>অ্যাপটি ডাউনলোড হচ্ছে... অনুগ্রহ করে অপেক্ষা করুন।</h2>
-
   <script>
     // টাইমস্ট্যাম্প যুক্ত করে ক্যাশ বাইপাস
     const timestamp = new Date().getTime();
-    const apkUrl = "https://christosangeet.com/downloads/christosangeet_v1.1.3.apk?t=" + timestamp;
+    const apkUrl = "https://christosangeet.com/?t=" + timestamp;
 
     // রিডাইরেক্ট
     window.location.href = apkUrl;
